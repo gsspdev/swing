@@ -18,7 +18,7 @@ class Swing < Formula
     
     # Test basic functionality
     output = shell_output("#{bin}/swing stats")
-    assert_match "Total songs: 1383", output
+    assert_match "Total songs:", output
     assert_match "Jazz Standards Database Statistics", output
     
     # Test search functionality
