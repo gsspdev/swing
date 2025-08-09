@@ -1,7 +1,7 @@
 # Jazz Standards Database CLI - Build and Distribution Justfile
 
 # Configuration
-binary_name := "jazz-db"
+binary_name := "swing"
 version := "1.0.0"
 install_path := "/usr/local/bin"
 deb_arch := "amd64"
@@ -14,6 +14,7 @@ default:
     @echo "Available recipes:"
     @echo "  build          - Build debug version"
     @echo "  build-release  - Build optimized release version" 
+    @echo "  sync           - Sync individual song files with consolidated database"
     @echo "  install        - Install to system (requires sudo)"
     @echo "  uninstall      - Remove from system (requires sudo)"
     @echo "  clean          - Clean build artifacts"
@@ -33,6 +34,11 @@ build-release:
     cargo build --release
     @echo "✅ Binary created: target/release/{{binary_name}}"
     @ls -lh target/release/{{binary_name}}
+
+# Sync individual song files with consolidated database
+sync:
+    @echo "🔄 Syncing jazz standards database..."
+    python3 sync_database.py
 
 # Install to system
 install: build-release

@@ -1,39 +1,5 @@
 [
   {
-    "Title": "9.20 Special",
-    "Composer": "Earl Warren",
-    "Rhythm": "Medium Swing",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "D9|Fm6|D9|Fm6|C|C7,B7,Bb7,A7"
-        },
-        "Endings": [
-          {
-            "Chords": "D9|G7,Ab7,G7,"
-          },
-          {
-            "Chords": "D9|G7,C6"
-          }
-        ]
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "C7|C7|F6|F6|D7|D7|G7|G7"
-        }
-      },
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "D9|Fm6|D9|Fm6|C|C7,B7,Bb7,A7|D9|G7,C6"
-        }
-      }
-    ]
-  },
-  {
     "Title": "26-2",
     "Composer": "John Coltrane",
     "Key": "F",
@@ -62,33 +28,6 @@
         "Label": "A",
         "MainSegment": {
           "Chords": "Fmaj7,Ab7|Dbmaj7,E7|Amaj7,C7|Cm7,F7|Bbmaj7,Ab7|Dbmaj7,E7|Amaj7,C7|Fmaj7"
-        }
-      }
-    ]
-  },
-  {
-    "Title": "52nd Street Theme",
-    "Composer": "Thelonious Monk",
-    "Rhythm": "Up Tempo Swing",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "Label": "A",
-        "Repeats": 1,
-        "MainSegment": {
-          "Chords": "C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,G7|C"
-        }
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "C7|C7|F6|F6|D7|D7|G7|G7"
-        }
-      },
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,G7|C"
         }
       }
     ]
@@ -132,6 +71,67 @@
             "Chords": "F#m7b5|B7b9|Em7|Em7"
           }
         ]
+      }
+    ]
+  },
+  {
+    "Title": "52nd Street Theme",
+    "Composer": "Thelonious Monk",
+    "Rhythm": "Up Tempo Swing",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "Label": "A",
+        "Repeats": 1,
+        "MainSegment": {
+          "Chords": "C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,G7|C"
+        }
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "C7|C7|F6|F6|D7|D7|G7|G7"
+        }
+      },
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,Am7|Dm7,G7|C,G7|C"
+        }
+      }
+    ]
+  },
+  {
+    "Title": "9.20 Special",
+    "Composer": "Earl Warren",
+    "Rhythm": "Medium Swing",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "D9|Fm6|D9|Fm6|C|C7,B7,Bb7,A7"
+        },
+        "Endings": [
+          {
+            "Chords": "D9|G7,Ab7,G7,"
+          },
+          {
+            "Chords": "D9|G7,C6"
+          }
+        ]
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "C7|C7|F6|F6|D7|D7|G7|G7"
+        }
+      },
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "D9|Fm6|D9|Fm6|C|C7,B7,Bb7,A7|D9|G7,C6"
+        }
       }
     ]
   },
@@ -6320,6 +6320,41 @@
     ]
   },
   {
+    "Title": "C'est Si Bon",
+    "Composer": "Henri Betti",
+    "Key": "Bb",
+    "Rhythm": "Medium Swing",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "Cm7|F7|Bbmaj7,Eb7|Dm7,G7|Cm7|F7"
+        },
+        "Endings": [
+          {
+            "Chords": "Bb6,Eb7|D7,G7b9"
+          },
+          {
+            "Chords": "Bb6|Abm7,Db7"
+          }
+        ]
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "Gbmaj7,Ebm7|Abm7,Db7|Gbmaj7|Gbmaj7|Gm7|C7|Cm7|F7,,Dm7,Dbm7"
+        }
+      },
+      {
+        "Label": "C",
+        "MainSegment": {
+          "Chords": "Cm7|F7|Bbmaj7,Eb7|Dm7,G7|Cm7|F7|Dm7b5|G7b9|Cm7|Ebm6|Dm7|G7|Cm7|F7|Bb6|Cm7,F7"
+        }
+      }
+    ]
+  },
+  {
     "Title": "C-Jam Blues",
     "Composer": "Duke Ellington",
     "Rhythm": "Medium Swing",
@@ -6363,41 +6398,6 @@
       {
         "MainSegment": {
           "Chords": "Bb7,Ab7|Gb7,F7|Bb7,Ab7|Gb7,F7|Bb6,G7|Cm7,F7|Bb6,F7|Bb6"
-        }
-      }
-    ]
-  },
-  {
-    "Title": "C'est Si Bon",
-    "Composer": "Henri Betti",
-    "Key": "Bb",
-    "Rhythm": "Medium Swing",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "Cm7|F7|Bbmaj7,Eb7|Dm7,G7|Cm7|F7"
-        },
-        "Endings": [
-          {
-            "Chords": "Bb6,Eb7|D7,G7b9"
-          },
-          {
-            "Chords": "Bb6|Abm7,Db7"
-          }
-        ]
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "Gbmaj7,Ebm7|Abm7,Db7|Gbmaj7|Gbmaj7|Gm7|C7|Cm7|F7,,Dm7,Dbm7"
-        }
-      },
-      {
-        "Label": "C",
-        "MainSegment": {
-          "Chords": "Cm7|F7|Bbmaj7,Eb7|Dm7,G7|Cm7|F7|Dm7b5|G7b9|Cm7|Ebm6|Dm7|G7|Cm7|F7|Bb6|Cm7,F7"
         }
       }
     ]
@@ -21567,20 +21567,6 @@
     ]
   },
   {
-    "Title": "Lennie-Bird",
-    "Composer": "Lennie Tristano",
-    "Key": "G",
-    "Rhythm": "Medium Up Swing",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "MainSegment": {
-          "Chords": "Gmaj7|Gmaj7|Gm7|C7|Fmaj7|Fmaj7|Fm7|Bb7|Eb6|A7b9|D7b9|D7b9|Bm7,Em7|Am7,D7|Gmaj7,Em7|Am7,D7"
-        }
-      }
-    ]
-  },
-  {
     "Title": "Lennie's Pennies",
     "Composer": "Lennie Tristano",
     "Key": "Cmin",
@@ -21597,6 +21583,20 @@
         "Label": "B",
         "MainSegment": {
           "Chords": "Cm6|Cm6|D7|G7|C7b9|C7b9|Fm6|Fm6|Fm6|Dm7b5|Cm6|A7|Dm7b5|G7b9|Cm6|Cm6"
+        }
+      }
+    ]
+  },
+  {
+    "Title": "Lennie-Bird",
+    "Composer": "Lennie Tristano",
+    "Key": "G",
+    "Rhythm": "Medium Up Swing",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "MainSegment": {
+          "Chords": "Gmaj7|Gmaj7|Gm7|C7|Fmaj7|Fmaj7|Fm7|Bb7|Eb6|A7b9|D7b9|D7b9|Bm7,Em7|Am7,D7|Gmaj7,Em7|Am7,D7"
         }
       }
     ]
@@ -27120,6 +27120,41 @@
     ]
   },
   {
+    "Title": "Oh! Look At Me Now",
+    "Composer": "DeVries-Bushkin",
+    "Key": "Ab",
+    "Rhythm": "Medium Swing",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "Eb7,Bb7|Eb7|Abmaj7|Abm7,Db7|Ebmaj7,Db7|C7,F7,F7,B7"
+        },
+        "Endings": [
+          {
+            "Chords": "Bb7,Eb7,D7,Db7|C7,B7,Bb7,"
+          },
+          {
+            "Chords": "Ebmaj7|Eb7,A7,D7,"
+          }
+        ]
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "Gm7|Eb7,D7|Gm7,D7|Gm7,C7|Fm7|Db7,C7|Fm7|Bb7"
+        }
+      },
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "Eb7,Bb7|Eb7|Abmaj7|Abm7,Db7|Ebmaj7,Db7|C7,F7,F7,Bb7|Ebmaj7|Ebmaj7"
+        }
+      }
+    ]
+  },
+  {
     "Title": "Oh, Lady Be Good",
     "Composer": "George Gershwin",
     "Key": "G",
@@ -27180,41 +27215,6 @@
             "Chords": "Eb6/G|Fm7|Eb6/Bb|Bb7|Eb6|Eb6"
           }
         ]
-      }
-    ]
-  },
-  {
-    "Title": "Oh! Look At Me Now",
-    "Composer": "DeVries-Bushkin",
-    "Key": "Ab",
-    "Rhythm": "Medium Swing",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "Eb7,Bb7|Eb7|Abmaj7|Abm7,Db7|Ebmaj7,Db7|C7,F7,F7,B7"
-        },
-        "Endings": [
-          {
-            "Chords": "Bb7,Eb7,D7,Db7|C7,B7,Bb7,"
-          },
-          {
-            "Chords": "Ebmaj7|Eb7,A7,D7,"
-          }
-        ]
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "Gm7|Eb7,D7|Gm7,D7|Gm7,C7|Fm7|Db7,C7|Fm7|Bb7"
-        }
-      },
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "Eb7,Bb7|Eb7|Abmaj7|Abm7,Db7|Ebmaj7,Db7|C7,F7,F7,Bb7|Ebmaj7|Ebmaj7"
-        }
       }
     ]
   },
@@ -30297,45 +30297,6 @@
     ]
   },
   {
-    "Title": "S.O.S.",
-    "Composer": "Wes Montgomery",
-    "Key": "Cmin",
-    "Rhythm": "Up Tempo Swing",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "Cm7|Bbm7,Eb7|Abmaj7|Dm7b5,G7#5|Cm7,Eb7|Abmaj7,G7#5|Cmaj7|G7"
-        }
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "Cm7|Bbm7,Eb7|Abmaj7|Dm7b5,G7#5|Cm7,Eb7|Abmaj7,G7#5|Cmaj7|Cmaj7"
-        }
-      },
-      {
-        "Label": "C",
-        "MainSegment": {
-          "Chords": "Gm7|C7|Fm7|Bb7|Bb7b5|A7b9|Ab7b5|G7#5"
-        }
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "Cm7|Bbm7,Eb7|Abmaj7|Dm7b5,G7#5|Cm7,Eb7|Abmaj7,G7#5|Cmaj7|G7b5"
-        }
-      },
-      {
-        "Label": "D",
-        "MainSegment": {
-          "Chords": "Bb7#9|Ebmaj7|G7#9|Cmaj7,,Bbm7,Eb7|Abmaj7|Abmaj7|G7b5|G7b5"
-        }
-      }
-    ]
-  },
-  {
     "Title": "S' Wonderful",
     "Composer": "George Gershwin",
     "Key": "Eb",
@@ -30399,6 +30360,45 @@
         "Label": "C",
         "MainSegment": {
           "Chords": "Gm7|Em7b5,Eb7|D7|Gm7|Bbmaj7,G7#9|Cm7,F7|Bb6|Cm7,F7"
+        }
+      }
+    ]
+  },
+  {
+    "Title": "S.O.S.",
+    "Composer": "Wes Montgomery",
+    "Key": "Cmin",
+    "Rhythm": "Up Tempo Swing",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "Cm7|Bbm7,Eb7|Abmaj7|Dm7b5,G7#5|Cm7,Eb7|Abmaj7,G7#5|Cmaj7|G7"
+        }
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "Cm7|Bbm7,Eb7|Abmaj7|Dm7b5,G7#5|Cm7,Eb7|Abmaj7,G7#5|Cmaj7|Cmaj7"
+        }
+      },
+      {
+        "Label": "C",
+        "MainSegment": {
+          "Chords": "Gm7|C7|Fm7|Bb7|Bb7b5|A7b9|Ab7b5|G7#5"
+        }
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "Cm7|Bbm7,Eb7|Abmaj7|Dm7b5,G7#5|Cm7,Eb7|Abmaj7,G7#5|Cmaj7|G7b5"
+        }
+      },
+      {
+        "Label": "D",
+        "MainSegment": {
+          "Chords": "Bb7#9|Ebmaj7|G7#9|Cmaj7,,Bbm7,Eb7|Abmaj7|Abmaj7|G7b5|G7b5"
         }
       }
     ]
@@ -31956,40 +31956,6 @@
         "Label": "A",
         "MainSegment": {
           "Chords": "Eb7#9|Abm7|Db7|Cm/maj7,Cm7|Em7|Abm7|Bm7|Ebm7"
-        }
-      }
-    ]
-  },
-  {
-    "Title": "Só Danço Samba",
-    "Composer": "Antonio-Carlos Jobim",
-    "Rhythm": "Bossa Nova",
-    "TimeSignature": "4/4",
-    "Sections": [
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "C6|F7|D7|D7|Dm7|G7"
-        },
-        "Endings": [
-          {
-            "Chords": "C6|F7"
-          },
-          {
-            "Chords": "C6|C6"
-          }
-        ]
-      },
-      {
-        "Label": "B",
-        "MainSegment": {
-          "Chords": "Gm7|C7|Fmaj7|Fmaj7|Am7|D7|G7|G7"
-        }
-      },
-      {
-        "Label": "A",
-        "MainSegment": {
-          "Chords": "C6|F7|D7|D7|Dm7|G7|C6|F7"
         }
       }
     ]
@@ -34326,6 +34292,40 @@
         "Label": "A",
         "MainSegment": {
           "Chords": "Bb6|Bb6|Bb6|Bb6|Eb7|Eb7|Bb7,,Cm7,C#0|Bb/D,G7#9|Cm7|F7|Bb7,,Eb7,Gb7/E|F7,Bb7"
+        }
+      }
+    ]
+  },
+  {
+    "Title": "Só Danço Samba",
+    "Composer": "Antonio-Carlos Jobim",
+    "Rhythm": "Bossa Nova",
+    "TimeSignature": "4/4",
+    "Sections": [
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "C6|F7|D7|D7|Dm7|G7"
+        },
+        "Endings": [
+          {
+            "Chords": "C6|F7"
+          },
+          {
+            "Chords": "C6|C6"
+          }
+        ]
+      },
+      {
+        "Label": "B",
+        "MainSegment": {
+          "Chords": "Gm7|C7|Fmaj7|Fmaj7|Am7|D7|G7|G7"
+        }
+      },
+      {
+        "Label": "A",
+        "MainSegment": {
+          "Chords": "C6|F7|D7|D7|Dm7|G7|C6|F7"
         }
       }
     ]

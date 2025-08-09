@@ -111,6 +111,6 @@ fn handle_show_command(songs: &[jazz_standards_database::Song], title: &str) {
         print_song_detailed(song);
     } else {
         println!("❌ Song '{}' not found", title);
-        println!("💡 Try using 'jazz-db search \"{}\"' for partial matches", title);
+        println!("💡 Try using 'swing search \"{}\"' for partial matches", title);
     }
 }
