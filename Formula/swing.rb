@@ -1,10 +1,10 @@
 # Homebrew Formula for Jazz Standards Database CLI
 class Swing < Formula
   desc "CLI tool for searching and analyzing jazz standards with chord progressions"
-  homepage "https://github.com/user/swing"  # Update with actual repo
-  url "https://github.com/user/swing/archive/v1.0.0.tar.gz"  # Update with actual repo
-  sha256 ""  # Will be calculated from the actual release
-  license "MIT"  # Update with actual license
+  homepage "https://github.com/gsspdev/swing"
+  url "https://github.com/gsspdev/swing/archive/v1.0.0.tar.gz"
+  sha256 "997c7f16e3c7aa9e79410145aabadcf90ea9c90da07aacd91ea31f5c0302a23e"
+  license "MIT"
 
   depends_on "rust" => :build
 
