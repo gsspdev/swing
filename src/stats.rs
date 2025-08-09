@@ -21,9 +21,12 @@ use crate::models::Song;
 /// ```no_run
 /// use jazz_standards_database::{load_jazz_standards, show_statistics};
 /// 
+/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// let songs = load_jazz_standards()?;
 /// show_statistics(&songs, false); // Basic statistics
 /// show_statistics(&songs, true);  // Detailed statistics
+/// # Ok(())
+/// # }
 /// ```
 pub fn show_statistics(songs: &[Song], detailed: bool) {
     println!("\n📊 Jazz Standards Database Statistics");
@@ -125,9 +128,12 @@ pub fn show_detailed_statistics(songs: &[Song]) {
 /// ```no_run
 /// use jazz_standards_database::{load_jazz_standards, list_field_values};
 /// 
+/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// let songs = load_jazz_standards()?;
 /// list_field_values(&songs, "keys");       // List all keys
 /// list_field_values(&songs, "composers");  // List all composers
+/// # Ok(())
+/// # }
 /// ```
 pub fn list_field_values(songs: &[Song], field: &str) {
     match field.to_lowercase().as_str() {

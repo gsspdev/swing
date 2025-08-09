@@ -10,7 +10,7 @@ use clap::{Parser, Subcommand};
 #[command(name = "swing")]
 #[command(about = "A CLI tool for searching and analyzing the Jazz Standards database")]
 #[command(long_about = "
-A comprehensive CLI tool for exploring the Jazz Standards database containing 1,382 songs.
+A comprehensive CLI tool for exploring the Jazz Standards database containing > 1,000 songs.
 Search by title/composer, filter by musical criteria, view detailed chord progressions, 
 and analyze database statistics.
 

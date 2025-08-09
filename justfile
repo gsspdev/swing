@@ -73,12 +73,12 @@ package-deb: build-release
     echo "Maintainer: Jazz Database Team <team@example.com>" >> dist/deb/DEBIAN/control
     echo "Description: CLI tool for searching and analyzing jazz standards" >> dist/deb/DEBIAN/control
     echo " A comprehensive command-line interface for exploring a database" >> dist/deb/DEBIAN/control
-    echo " of 1,382 jazz standards with full chord progressions." >> dist/deb/DEBIAN/control
+    echo " of 1,383 jazz standards with full chord progressions." >> dist/deb/DEBIAN/control
     
     # Create copyright file
     echo "Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/" > dist/deb/usr/share/doc/{{binary_name}}/copyright
     echo "Upstream-Name: {{binary_name}}" >> dist/deb/usr/share/doc/{{binary_name}}/copyright
-    echo "Source: https://github.com/user/jazz-db" >> dist/deb/usr/share/doc/{{binary_name}}/copyright
+    echo "Source: https://github.com/user/swing" >> dist/deb/usr/share/doc/{{binary_name}}/copyright
     echo "" >> dist/deb/usr/share/doc/{{binary_name}}/copyright
     echo "Files: *" >> dist/deb/usr/share/doc/{{binary_name}}/copyright
     echo "Copyright: 2024 Jazz Database Team" >> dist/deb/usr/share/doc/{{binary_name}}/copyright
@@ -100,12 +100,12 @@ package-rpm: build-release
     echo "Release: 1%{?dist}" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "Summary: CLI tool for searching and analyzing jazz standards" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "License: MIT" >> dist/rpm/SPECS/{{binary_name}}.spec
-    echo "URL: https://github.com/user/jazz-db" >> dist/rpm/SPECS/{{binary_name}}.spec
+    echo "URL: https://github.com/user/swing" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "Source0: %{name}-%{version}.tar.gz" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "%description" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "A comprehensive command-line interface for exploring a database" >> dist/rpm/SPECS/{{binary_name}}.spec
-    echo "of 1,382 jazz standards with full chord progressions." >> dist/rpm/SPECS/{{binary_name}}.spec
+    echo "of 1,383 jazz standards with full chord progressions." >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "%install" >> dist/rpm/SPECS/{{binary_name}}.spec
     echo "mkdir -p %{buildroot}/usr/local/bin" >> dist/rpm/SPECS/{{binary_name}}.spec

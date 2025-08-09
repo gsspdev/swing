@@ -23,9 +23,12 @@ use crate::models::Song;
 /// ```no_run
 /// use jazz_standards_database::{load_jazz_standards, search_songs};
 /// 
+/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// let songs = load_jazz_standards()?;
 /// let results = search_songs(&songs, "miles");
 /// println!("Found {} songs matching 'miles'", results.len());
+/// # Ok(())
+/// # }
 /// ```
 pub fn search_songs<'a>(songs: &'a [Song], term: &str) -> Vec<&'a Song> {
     let term_lower = term.to_lowercase();
@@ -62,6 +65,7 @@ pub fn search_songs<'a>(songs: &'a [Song], term: &str) -> Vec<&'a Song> {
 /// ```no_run
 /// use jazz_standards_database::{load_jazz_standards, filter_songs};
 /// 
+/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// let songs = load_jazz_standards()?;
 /// 
 /// // Find all songs in C major with swing rhythm
@@ -69,6 +73,8 @@ pub fn search_songs<'a>(songs: &'a [Song], term: &str) -> Vec<&'a Song> {
 /// 
 /// // Find all Miles Davis compositions
 /// let miles_songs = filter_songs(&songs, None, None, None, Some("miles davis"));
+/// # Ok(())
+/// # }
 /// ```
 pub fn filter_songs<'a>(
     songs: &'a [Song], 

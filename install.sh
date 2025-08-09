@@ -5,9 +5,9 @@
 
 set -e
 
-REPO_URL="https://github.com/user/jazz-db"  # Update with actual repo
+REPO_URL="https://github.com/user/swing"  # Update with actual repo
 VERSION="1.0.0"
-BINARY_NAME="jazz-db"
+BINARY_NAME="swing"
 INSTALL_DIR="/usr/local/bin"
 
 # Colors for output
@@ -142,8 +142,8 @@ install_direct() {
     print_warning "For this demo, copying local binary instead"
     
     # Copy the local binary (for demo purposes)
-    if [[ -f "target/release/jazz-db" ]]; then
-        cp "target/release/jazz-db" "$TEMP_FILE"
+    if [[ -f "target/release/swing" ]]; then
+        cp "target/release/swing" "$TEMP_FILE"
         print_success "Binary prepared for installation"
     else
         print_error "Local binary not found. Please run 'cargo build --release' first."
@@ -179,13 +179,13 @@ show_usage() {
     echo -e "${GREEN}🎵 Jazz DB is now installed!${NC}"
     echo
     echo -e "${BLUE}Try these commands:${NC}"
-    echo "  jazz-db --help                    # Show all available commands"
-    echo "  jazz-db stats                     # Database statistics"
-    echo "  jazz-db search \"miles davis\"      # Search for songs"
-    echo "  jazz-db filter --key C            # Filter by key"
-    echo "  jazz-db show \"All Blues\"          # Show song details"
+    echo "  swing --help                    # Show all available commands"
+    echo "  swing stats                     # Database statistics"
+    echo "  swing search \"miles davis\"      # Search for songs"
+    echo "  swing filter --key C            # Filter by key"
+    echo "  swing show \"All Blues\"          # Show song details"
     echo
-    echo -e "${BLUE}Database contains 1,382 jazz standards with full chord progressions!${NC}"
+    echo -e "${BLUE}Database contains 1,383 jazz standards with full chord progressions!${NC}"
     echo
 }
 

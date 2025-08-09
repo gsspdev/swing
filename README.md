@@ -13,37 +13,7 @@ A command-line tool for searching, analyzing, and displaying jazz standards with
 
 ## Installation
 
-### Quick Install (Recommended)
-
-```bash
-# Clone and build the project
-git clone <repository-url>
-cd swing
-cargo build --release
-
-# Install the binary to your system
-sudo cp target/release/swing /usr/local/bin/
-
-# Or install to user directory (add ~/.local/bin to your PATH)
-mkdir -p ~/.local/bin
-cp target/release/swing ~/.local/bin/
-```
-
-### Alternative Installation
-
-If you have `just` installed:
-```bash
-just build-release
-sudo just install
-```
-
-### Verify Installation
-
-```bash
-# Check that the tool is installed correctly
-swing --version
-swing --help
-```
+See [INSTALL.md](INSTALL.md) for detailed installation instructions including package managers, pre-built binaries, and building from source.
 
 ## Usage
 
@@ -184,15 +154,7 @@ swing show --help
 - No additional dependencies required (self-contained binary)
 - Minimal system resources needed
 
-## Troubleshooting
-
-**Command not found**: Ensure the binary is in your PATH or use the full path to the executable.
-
-**Permission denied**: You may need to make the binary executable:
-```bash
-chmod +x /path/to/swing
-```
-
 ## Support
 
+For installation help, see [INSTALL.md](INSTALL.md).
 For issues and feature requests, please [create an issue](link-to-issues) in the repository.

@@ -1,6 +1,6 @@
 //! Jazz Standards Database CLI Application
 //! 
-//! A comprehensive command-line interface for exploring a database of 1,382 jazz standards
+//! A comprehensive command-line interface for exploring a database of > 1,000 jazz standards
 //! with full chord progressions, search capabilities, and statistical analysis.
 
 use clap::Parser;

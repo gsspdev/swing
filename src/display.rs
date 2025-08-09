@@ -19,10 +19,13 @@ use crate::models::Song;
 /// ```no_run
 /// use jazz_standards_database::{load_jazz_standards, print_song_summary};
 /// 
+/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// let songs = load_jazz_standards()?;
 /// if let Some(song) = songs.first() {
 ///     print_song_summary(song);
 /// }
+/// # Ok(())
+/// # }
 /// ```
 pub fn print_song_summary(song: &Song) {
     println!("📄 {}", song.title);
@@ -62,10 +65,13 @@ pub fn print_song_summary(song: &Song) {
 /// ```no_run
 /// use jazz_standards_database::{load_jazz_standards, print_song_detailed};
 /// 
+/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
 /// let songs = load_jazz_standards()?;
 /// if let Some(song) = songs.first() {
 ///     print_song_detailed(song);
 /// }
+/// # Ok(())
+/// # }
 /// ```
 pub fn print_song_detailed(song: &Song) {
     println!("\n═══════════════════════════════════════");

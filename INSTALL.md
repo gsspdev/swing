@@ -1,4 +1,4 @@
-# 🎵 Jazz Standards Database CLI - Installation Guide
+# 🎵 Swing - Jazz Standards Database CLI - Installation Guide
 
 Multiple installation methods are available for macOS and Linux systems.
 
@@ -6,12 +6,12 @@ Multiple installation methods are available for macOS and Linux systems.
 
 ### One-line install script:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/user/jazz-db/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/user/swing/main/install.sh | bash
 ```
 
 or with wget:
 ```bash
-wget -qO- https://raw.githubusercontent.com/user/jazz-db/main/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/user/swing/main/install.sh | bash
 ```
 
 ## Installation Methods
@@ -20,13 +20,13 @@ wget -qO- https://raw.githubusercontent.com/user/jazz-db/main/install.sh | bash
 
 ```bash
 # Add tap (once available)
-brew tap user/jazz-db
+brew tap user/swing
 
 # Install
-brew install jazz-db
+brew install swing
 
 # Verify
-jazz-db --version
+swing --version
 ```
 
 ### 2. 📦 Package Managers (Linux)
@@ -34,10 +34,10 @@ jazz-db --version
 #### Debian/Ubuntu (.deb):
 ```bash
 # Download package
-wget https://github.com/user/jazz-db/releases/download/v1.0.0/jazz-db_1.0.0_amd64.deb
+wget https://github.com/user/swing/releases/download/v1.0.0/swing_1.0.0_amd64.deb
 
 # Install
-sudo dpkg -i jazz-db_1.0.0_amd64.deb
+sudo dpkg -i swing_1.0.0_amd64.deb
 
 # Fix dependencies if needed
 sudo apt-get install -f
@@ -46,10 +46,10 @@ sudo apt-get install -f
 #### Red Hat/CentOS (.rpm):
 ```bash
 # Download package  
-wget https://github.com/user/jazz-db/releases/download/v1.0.0/jazz-db-1.0.0-1.x86_64.rpm
+wget https://github.com/user/swing/releases/download/v1.0.0/swing-1.0.0-1.x86_64.rpm
 
 # Install
-sudo rpm -ivh jazz-db-1.0.0-1.x86_64.rpm
+sudo rpm -ivh swing-1.0.0-1.x86_64.rpm
 ```
 
 ### 3. 🔧 Manual Installation
@@ -57,32 +57,39 @@ sudo rpm -ivh jazz-db-1.0.0-1.x86_64.rpm
 #### Download pre-compiled binary:
 ```bash
 # macOS (Intel)
-curl -L -o jazz-db https://github.com/user/jazz-db/releases/download/v1.0.0/jazz-db-macos-x86_64
+curl -L -o swing https://github.com/user/swing/releases/download/v1.0.0/swing-macos-x86_64
 
 # macOS (Apple Silicon)
-curl -L -o jazz-db https://github.com/user/jazz-db/releases/download/v1.0.0/jazz-db-macos-aarch64
+curl -L -o swing https://github.com/user/swing/releases/download/v1.0.0/swing-macos-aarch64
 
 # Linux (x86_64)
-curl -L -o jazz-db https://github.com/user/jazz-db/releases/download/v1.0.0/jazz-db-linux-x86_64
+curl -L -o swing https://github.com/user/swing/releases/download/v1.0.0/swing-linux-x86_64
 
 # Make executable and install
-chmod +x jazz-db
-sudo mv jazz-db /usr/local/bin/
+chmod +x swing
+sudo mv swing /usr/local/bin/
 ```
 
 ### 4. 🦀 From Source (Rust required)
 
 ```bash
 # Clone repository
-git clone https://github.com/user/jazz-db.git
-cd jazz-db
+git clone https://github.com/user/swing.git
+cd swing
 
-# Build and install
-just install
+# Build and install with justfile (recommended)
+just build-release
+sudo just install
 
 # Or manually with cargo
 cargo build --release
-sudo cp target/release/jazz-db /usr/local/bin/
+
+# Install to system directory
+sudo cp target/release/swing /usr/local/bin/
+
+# Or install to user directory (add ~/.local/bin to your PATH)
+mkdir -p ~/.local/bin
+cp target/release/swing ~/.local/bin/
 ```
 
 ## Verification
@@ -91,15 +98,15 @@ Test your installation:
 
 ```bash
 # Check version
-jazz-db --version
+swing --version
 
 # View help
-jazz-db --help
+swing --help
 
 # Test basic functionality
-jazz-db stats
-jazz-db search "miles davis"
-jazz-db show "All Blues"
+swing stats
+swing search "miles davis"
+swing show "All Blues"
 ```
 
 ## Troubleshooting
@@ -130,7 +137,14 @@ export PATH="$HOME/.local/bin:$PATH"
 ### Missing dependencies
 The binary is self-contained and requires no runtime dependencies. If you're building from source, you need:
 
-- Rust 1.70+ (`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`)
+- Rust 1.75+ (`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`)
+
+### Binary not executable
+If you get permission denied when trying to run the binary:
+
+```bash
+chmod +x /path/to/swing
+```
 
 ## Uninstallation
 
@@ -140,19 +154,19 @@ The binary is self-contained and requires no runtime dependencies. If you're bui
 just uninstall
 
 # Or manually
-sudo rm /usr/local/bin/jazz-db
+sudo rm /usr/local/bin/swing
 ```
 
 ### Package managers:
 ```bash
 # Homebrew
-brew uninstall jazz-db
+brew uninstall swing
 
 # Debian/Ubuntu
-sudo apt remove jazz-db
+sudo apt remove swing
 
 # Red Hat/CentOS
-sudo rpm -e jazz-db
+sudo rpm -e swing
 ```
 
 ## System Requirements
@@ -160,13 +174,13 @@ sudo rpm -e jazz-db
 - **macOS**: 10.12 Sierra or later
 - **Linux**: Any modern distribution (glibc 2.17+)
 - **Architecture**: x86_64 (Intel/AMD) or aarch64 (ARM64)
-- **Disk Space**: ~2MB for binary + database
+- **Disk Space**: ~2MB for binary (database is embedded)
 - **Memory**: Minimal (~10MB runtime)
 
 ## Database Information
 
 The CLI tool includes an embedded database containing:
-- **1,382 jazz standards** from The Real Book Volume I Sixth Edition
+- **1,383 jazz standards** from The Real Book Volume I Sixth Edition
 - **Full chord progressions** organized by song sections
 - **Metadata**: composers, keys, rhythms, time signatures
 - **No external files** required - completely self-contained
@@ -177,33 +191,33 @@ After installation, try these commands:
 
 ```bash
 # Explore the database
-jazz-db stats --detailed
+swing stats --detailed
 
 # Search for songs
-jazz-db search "blue"
-jazz-db search "thelonious monk"
+swing search "blue"
+swing search "thelonious monk"
 
 # Filter by criteria  
-jazz-db filter --key C
-jazz-db filter --rhythm "bossa nova"
-jazz-db filter --composer "miles davis" --detailed
+swing filter --key C
+swing filter --rhythm "bossa nova"
+swing filter --composer "miles davis" --detailed
 
 # View specific songs
-jazz-db show "Giant Steps"
-jazz-db show "Body and Soul"
+swing show "Giant Steps"
+swing show "Body and Soul"
 
 # List available options
-jazz-db list keys
-jazz-db list rhythms
-jazz-db list composers
+swing list keys
+swing list rhythms
+swing list composers
 ```
 
 ---
 
 ## Support
 
-- **Issues**: Report bugs at https://github.com/user/jazz-db/issues
-- **Documentation**: Full CLI help available with `jazz-db --help`
-- **Updates**: Check for new releases at https://github.com/user/jazz-db/releases
+- **Issues**: Report bugs at https://github.com/user/swing/issues
+- **Documentation**: Full CLI help available with `swing --help`
+- **Updates**: Check for new releases at https://github.com/user/swing/releases
 
 Happy jazz exploring! 🎵
