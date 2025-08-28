@@ -1,0 +1,145 @@
+# Hall Leonard Jazz Piano Method Recommended Jazz Standards to Learn
+
+*Italicized*: Easier for beginners to learn
+**Boldened**: Frequently played essential tunes
+
+- *Afternoon in Paris*
+- **Body and Soul**
+- ***Doxy***
+- Ain't Misbehavin'
+- Bolivia
+- East of the Sun (and West of the Moon)
+- Airegin
+- But Beautiful
+- Easy Living
+- Alice in Wonderland
+- But Not for Me
+- Easy to Love
+- ***All Blues***
+- ***Bye Bye Blackbird***
+- Embraceable You
+- All of Me
+- ***Cantaloupe Island***
+- Emily
+- All of You
+- **Caravan**
+- Everything Happens to Me
+- **All the Things You Are**
+- Ceora
+- *Falling in Love with Love* 
+- *Almost Like Being in Love*
+- **Cherokee**
+- *Fly Me to the Moon*
+- **Alone Together**
+- Come Rain or Come Shine
+- A Foggy Day
+- Along Came Betty
+- Con Alma
+- ***Footprints***
+- Angel Eyes
+- Confirmation
+- **Four**
+- April in Paris
+- **Corcovado (also called Quiet Nights of Quiet Stars)**
+- Gentle Rain
+- ***Autumn Leaves***
+- Georgia on My Mind
+- **Giant Steps**
+- Beatrice
+- Darn That Dream
+- Beautiful Friendship
+- **Days of Wine and Roses**
+- **The Girl from Ipanema**
+- Beautiful Love
+- Dolphin Dance
+- God Bless' the Child
+- Don't Blame Me
+- *Black Orpheus (also called A Day in the Life of a Fool or Manh de Carnaval)*
+- Gone with the Wind
+- Don't Get Around Much Anymore
+- **Donna Lee (based on the chord progression of Indiana (Back Home Again in Indiana))**
+- ***Blue Bossa***
+- Blue Skies
+- Groovin' High
+- Half Nelson (based on the chord progression of Lady Bird)
+- ***Have You Met Miss Jones?***
+- Here's That Rainy Day
+- Hi-Fly
+- *Honeysuckle Rose*
+- How Deep Is the Ocean?
+- ***How High the Moon***
+- How Insensitive
+- ***I Can't Get Started***
+- I Didn't Know What Time It Was
+- I Fall in Love Too Easily
+- ***I Got Rhythm***
+- I Hear a Rhapsody
+- **I Love You**
+- I Mean You
+- **I Remember You**
+- I Should Care
+- I Thought About You
+- ***I'll Remember April***
+- I'm Getting Sentimental Over You
+- I'm Old Fashioned
+- I've Grown Accustomed to Her Face
+- I've Never Been in Love Before
+- **If I Should Lose You**
+- If I Were a Bell
+- If You Could See Me Now
+- ***Impressions (based on the chord progression of So What)***
+- In a Mellow Tone
+- **In a Sentimental Mood**
+- In Walked Bud
+- In Your Own Sweet Way
+- Indiana (Back Home Again in Indiana)
+- Inner Urge
+- **Invitation**
+- **It Could Happen to You**
+- It Don't Mean a Thing
+- It's You or No One
+- Joy Spring
+- **Just Friends**
+- Just in Time
+- Just One of Those Things
+- Just You, Just Me
+- Killer Joe
+- ***Lady Bird***
+- Laura
+- Lazy Bird
+- **Like Someone in Love**
+- ***Well You Needn't***
+- You Go to My Head
+- ***What Is This Thing Called Love?***
+- **You Stepped Out of a Dream**
+- What's New?
+- You'd Be So Nice to Come Home To
+- When Lights Are Low
+- You've Changed
+- **Whisper Not**
+- Willow Weep for Me
+- Without a Song
+- Woody'n You
+- *Work Song*
+- **Yardbird Suite**
+- You and the Night and the Music
+- You Don't Know What Love Is
+
+## Tunes based on the blues
+- **Au Privave**
+- **Billie's Bounce**
+- ***Blue Monk***
+- ***Now's the Time***
+- *Sonnymoon for Two*
+- ***Tenor Madness***
+- 
+## Tunes based on the minor blues
+- ***Mr. P.C.***
+- *Birk's Works*
+
+## Tunes based on the chords of "I Got Rhythm"
+- **Anthropology**
+- Moose the Mooche
+- ***Oleo***
+- Rhythm-a-Ning
+- ***The Theme***

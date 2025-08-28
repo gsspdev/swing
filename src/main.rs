@@ -1,7 +1,4 @@
-//! Jazz Standards Database CLI Application
-//! 
-//! A comprehensive command-line interface for exploring a database of > 1,000 jazz standards
-//! with full chord progressions, search capabilities, and statistical analysis.
+//! Jazz Standards Database CLI
 
 use clap::Parser;
 use jazz_standards_database::{
@@ -12,13 +9,9 @@ use jazz_standards_database::{
     show_statistics, list_field_values
 };
 
-/// Application entry point
-/// 
-/// Parses command-line arguments, loads the database, and executes the requested command.
 fn main() {
     let cli = Cli::parse();
 
-    // Load the embedded jazz standards database
     let songs = match load_jazz_standards() {
         Ok(songs) => songs,
         Err(e) => {
@@ -27,7 +20,6 @@ fn main() {
         }
     };
 
-    // Execute the requested command
     match cli.command {
         Commands::Search { term, detailed } => {
             handle_search_command(&songs, &term, detailed);
@@ -48,9 +40,6 @@ fn main() {
     }
 }
 
-/// Handle the search command
-/// 
-/// Searches for songs by title or composer and displays results.
 fn handle_search_command(songs: &[jazz_standards_database::Song], term: &str, detailed: bool) {
     let results = search_songs(songs, term);
     
@@ -72,9 +61,6 @@ fn handle_search_command(songs: &[jazz_standards_database::Song], term: &str, de
     }
 }
 
-/// Handle the filter command
-/// 
-/// Filters songs by various criteria and displays results.
 fn handle_filter_command(
     songs: &[jazz_standards_database::Song], 
     key: Option<&str>, 
@@ -103,9 +89,6 @@ fn handle_filter_command(
     }
 }
 
-/// Handle the show command
-/// 
-/// Displays detailed information about a specific song.
 fn handle_show_command(songs: &[jazz_standards_database::Song], title: &str) {
     if let Some(song) = songs.iter().find(|s| s.title.eq_ignore_ascii_case(title)) {
         print_song_detailed(song);

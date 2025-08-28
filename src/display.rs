@@ -1,32 +1,7 @@
-//! Display and formatting functionality
-//! 
-//! This module provides functions for formatting and displaying song information
-//! in various formats (summary and detailed views).
+//! Display formatting
 
 use crate::models::Song;
 
-/// Print a concise summary of a song
-/// 
-/// Displays basic song information including title, composer, key, rhythm,
-/// time signature, and section count.
-/// 
-/// # Arguments
-/// 
-/// * `song` - The song to display
-/// 
-/// # Examples
-/// 
-/// ```no_run
-/// use jazz_standards_database::{load_jazz_standards, print_song_summary};
-/// 
-/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
-/// let songs = load_jazz_standards()?;
-/// if let Some(song) = songs.first() {
-///     print_song_summary(song);
-/// }
-/// # Ok(())
-/// # }
-/// ```
 pub fn print_song_summary(song: &Song) {
     println!("📄 {}", song.title);
     
@@ -51,28 +26,6 @@ pub fn print_song_summary(song: &Song) {
     }
 }
 
-/// Print detailed information about a song including chord progressions
-/// 
-/// Displays complete song information including full chord progressions
-/// for all sections, alternative endings, and repeat information.
-/// 
-/// # Arguments
-/// 
-/// * `song` - The song to display in detail
-/// 
-/// # Examples
-/// 
-/// ```no_run
-/// use jazz_standards_database::{load_jazz_standards, print_song_detailed};
-/// 
-/// # fn main() -> Result<(), Box<dyn std::error::Error>> {
-/// let songs = load_jazz_standards()?;
-/// if let Some(song) = songs.first() {
-///     print_song_detailed(song);
-/// }
-/// # Ok(())
-/// # }
-/// ```
 pub fn print_song_detailed(song: &Song) {
     println!("\n═══════════════════════════════════════");
     println!("📄 {}", song.title);
@@ -99,7 +52,6 @@ pub fn print_song_detailed(song: &Song) {
         println!("───────────────────────────────────────");
         
         for (i, section) in sections.iter().enumerate() {
-            // Print section header
             if let Some(label) = &section.label {
                 print!("  Section {}", label);
                 if let Some(repeats) = section.repeats {
@@ -109,15 +61,11 @@ pub fn print_song_detailed(song: &Song) {
             } else {
                 println!("  Section {}", i + 1);
             }
-            
-            // Print main chord progression
             if let Some(main_seg) = &section.main_segment {
                 if let Some(chords) = &main_seg.chords {
                     println!("    🎼 Main: {}", chords);
                 }
             }
-            
-            // Print alternative endings
             if let Some(endings) = &section.endings {
                 for (j, ending) in endings.iter().enumerate() {
                     if let Some(chords) = &ending.chords {

@@ -1,11 +1,7 @@
-//! Command-line interface definitions
-//! 
-//! This module defines the CLI structure, commands, and argument parsing
-//! using the clap library.
+//! CLI definitions
 
 use clap::{Parser, Subcommand};
 
-/// Command-line interface for the Jazz Standards Database
 #[derive(Parser)]
 #[command(name = "swing")]
 #[command(about = "A CLI tool for searching and analyzing the Jazz Standards database")]
@@ -26,82 +22,40 @@ pub struct Cli {
     pub command: Commands,
 }
 
-/// Available CLI commands
 #[derive(Subcommand)]
 pub enum Commands {
-    /// Search songs by title or composer (partial matching)
-    #[command(long_about = "Search for songs by title or composer name using partial matching.
-    
-Examples:
-  swing search \"miles\"          # Find all songs by Miles Davis
-  swing search \"blue\"           # Find songs with 'blue' in title
-  swing search \"monk\" --detailed # Show chord progressions")]
+    /// Search songs by title or composer
     Search {
-        /// Search term (searches both title and composer)
         term: String,
-        /// Show detailed information including chord progressions
-        #[arg(short, long, help = "Include full song structure and chord progressions")]
+        #[arg(short, long)]
         detailed: bool,
     },
     /// Filter songs by musical criteria
-    #[command(long_about = "Filter the database by specific musical criteria.
-    
-Examples:
-  swing filter --key C                    # All songs in C major
-  swing filter --rhythm \"bossa nova\"      # All bossa nova songs  
-  swing filter --composer \"thelonious\"    # All Monk compositions
-  swing filter --key F --rhythm swing     # F major swing songs")]
     Filter {
-        /// Filter by key (e.g., "C", "Am", "F#")
-        #[arg(short, long, help = "Musical key (use 'swing list keys' to see options)")]
+        #[arg(short, long)]
         key: Option<String>,
-        /// Filter by rhythm/style (e.g., "Swing", "Bossa Nova")
-        #[arg(short, long, help = "Rhythm/style (use 'swing list rhythms' to see options)")]
+        #[arg(short, long)]
         rhythm: Option<String>,
-        /// Filter by time signature (e.g., "4/4", "3/4")
-        #[arg(short, long, help = "Time signature (use 'swing list time' to see options)")]
+        #[arg(short, long)]
         time: Option<String>,
-        /// Filter by composer name (partial matching)
-        #[arg(short, long, help = "Composer name (partial matching allowed)")]
+        #[arg(short, long)]
         composer: Option<String>,
-        /// Show detailed information including chord progressions
-        #[arg(short, long, help = "Include full song structure and chord progressions")]
+        #[arg(short, long)]
         detailed: bool,
     },
-    /// Show database statistics and analysis
-    #[command(long_about = "Display comprehensive statistics about the jazz standards database.
-    
-Examples:
-  swing stats            # Basic statistics
-  swing stats --detailed # Top composers, keys, rhythms")]
+    /// Show database statistics
     Stats {
-        /// Show detailed breakdown by category
-        #[arg(short, long, help = "Show top 10 lists for keys, rhythms, and composers")]
+        #[arg(short, long)]
         detailed: bool,
     },
-    /// List all unique values for a specific field
-    #[command(long_about = "List all unique values for database fields.
-    
-Examples:
-  swing list keys            # All available keys
-  swing list rhythms         # All rhythm styles  
-  swing list composers       # All composer names
-  swing list time-signatures # All time signatures")]
+    /// List unique field values
     List {
-        /// Field to list: keys, rhythms, composers, time-signatures
-        #[arg(help = "Field to list", value_parser = ["keys", "rhythms", "composers", "time-signatures", "time"])]
+        #[arg(value_parser = ["keys", "rhythms", "composers", "time-signatures", "time"])]
         field: String,
     },
-    /// Show detailed information about a specific song
-    #[command(long_about = "Display complete information about a specific song including chord progressions.
-    
-Examples:
-  swing show \"All Blues\"
-  swing show \"Giant Steps\"  
-  swing show \"Body and Soul\"")]
+    /// Show detailed song information
     Show {
-        /// Exact song title (case-insensitive)
-        #[arg(help = "Song title (use quotes for multi-word titles)")]
+        #[arg()]
         title: String,
     },
 }
